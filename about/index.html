@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://fonts.cdnfonts.com/css/pixelcraft-2" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/mineplayer" rel="stylesheet">  <link href="https://fonts.cdnfonts.com/css/pixelcraft-2" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/HfrQfMHf/head-fox.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/HfrQfMHf/head-fox.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/HfrQfMHf/head-fox.png">
+  <link rel="manifest" href="/site.webmanifest">
+    <title>About Us</title>
+</head>
+<style>
+    body {
+        user-select: none;
+        background: linear-gradient(90deg, rgb(9, 0, 176), rgb(0, 0, 102), rgb(32, 0, 161));
+    }
+    header {
+        background: linear-gradient(90deg, rgb(0, 8, 255), rgb(122, 50, 237));
+        position: fixed;
+        height: 70px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        box-shadow: 0px 5px 10px;
+        z-index: -1;
+    }
+
+    .logo {
+        width: 300px;
+        animation: logo 5s infinite;
+        z-index: -1;
+    }
+    @keyframes logo {
+        0% {
+            transform: scale(1);
+            text-shadow: 0px 5px 10px red;
+        }
+        50% {
+            transform: scale(1);
+            text-shadow: 0px 5px 10px rgb(0, 187, 56);
+        }
+        100% {
+            transform: scale(1);
+            text-shadow: 0px 5px 10px rgb(0, 42, 231);
+        }
+    }
+
+    .menu {
+        transition: all 0.1s ease;
+        background: none;
+        color: white;
+        border: none;
+        font-family: 'mineplayer';
+        font-size: 20px;
+        transform: translateY(10px) translateX(10px);
+        font-size: 30px;
+        z-index: 100;
+        position: absolute;
+    }
+    .menu:hover:active {
+        color: black
+    }
+    ul {
+        transition: all 1s ease;
+        background: rgb(96, 0, 192);
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px rgb(52, 52, 52);
+        width: 30%;
+        height: 590px;
+        transform: translateX(-35px) translateY(-25px);
+        list-style: none;
+        z-index: 0;
+        position: absolute;
+    }
+
+    nav {
+        transform: translateY(70px);
+    }
+    a {
+        color: aliceblue;
+        font-family: 'mineplayer';
+        text-decoration-line: none;
+        text-shadow: 0px 2px 0px rgb(0, 56, 140);
+    }
+    a i:hover {
+        color: rgb(84, 178, 255);
+        background-color: blue;
+    }
+    i {
+        color: rgb(255, 255, 255);
+        word-spacing: 50px;
+        text-shadow: 0px 2px 0px rgb(45, 45, 45);
+    }
+    .social {
+        color: white;
+        list-style: none;
+    }
+    .s-media-icons {
+        color: rgb(255, 255, 255);
+        transition: transform 1s ease;
+    }
+    .s-media-icons:hover {
+        color: rgb(122, 147, 255);
+        transform: scale(1.2);
+    }
+    /*About Us*/
+    .About-Us {
+        color: aqua;
+        text-shadow: 0px 3px 2px black;
+        text-align: center;
+        font-family: 'mineplayer';
+        font-size: 35px;
+        position: relative;
+        transform: translateY(-30px);
+        animation: about 0.2s linear;
+    }
+    @keyframes about {
+        0%{
+            color: rgb(0, 166, 255);
+            transform: translateX(-500px);
+        }
+        100% {
+            color: rgb(0, 166, 255);
+        }
+    }
+    .bg-about {
+        background: rgb(255, 255, 255, 0.2);
+        transform: translateY(62px);
+        left: 0;
+        right: 0;
+        height: 220px;
+        border-radius: 2px 10px;
+        z-index: -1;
+        position: absolute;
+        box-shadow: 0px 5px 10px rgb(48, 48, 48);
+    }
+    .paragraph {
+        color: white;
+        font-family: 'pixelcraft';
+        font-size: 11px;
+        transform: translateY(-40px);
+        text-align: center;
+        user-select: text;
+        text-shadow: 0px 2px 0px rgb(0, 0, 113);
+    }
+
+</style>
+<body>
+    <!--menu.bar-->
+    <div>
+        <button id="menuBtn" class="menu" onclick="menu.hidden^=1">☰</button>
+        <ul id="menu" hidden>
+            <nav>
+            <li><i class="fa-solid fa-house">.</i><a href="index.html">home</a></li>
+            <p></p>
+            <!--Social-Media-->
+            <li class="social"><i class="fa-brands fa-youtube">.</i><a class="s-media-icons" href="https://youtube.com/@FireFoxMC-V2">Youtube</a></li>
+            <p></p>
+            <li class="social"><i class="fa-brands fa-tiktok">.</i><a class="s-media-icons" href="https://tiktok.com/@firefoxmc_xd">Tiktok</a></li>
+            <p></p>
+            <li class="social"><i class="fa-brands fa-discord">.</i><a class="s-media-icons" href="https://discord.gg/K9jxdwT9">Discord</a></li>
+            <p></p>
+            <li><i class="fa-solid  fa-download">.</i><a href="Download.html">Download</a></li>
+        </nav>
+        </ul>
+     </div>
+    <header>
+        <img class="logo" src="https://i.ibb.co/9kHy6QWF/Gemini-Generated-Image-sn48sdsn48sdsn48-removebg-preview-1.png" alt="FireFoxMC-Logo">
+    </header>
+    <!--About Us-->
+    <nav class="bg-about">
+        <p class="About-Us">About Us</p>
+        <p class="paragraph">Hello everyone! Welcome to FireFoxMC-Server. Thanks for visiting my website and this website make for easy to play Khmer Minecraft server. This website will show you Khmer Minecraft server list with Players online count, server offline or online, and owner server. If have some more new Server, I'll add to this website. Thanks You again for support my works. </p>
+    </nav>
+    <script src="srcipt.js">
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+    </script> 
+</body>
+</html>
