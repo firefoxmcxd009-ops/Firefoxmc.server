@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>FireFoxMC-Server</ShortName>
+  <Description>Search Minecraft servers on FireFoxMC</Description>
+  <Url type="text/html" method="get" template="https://firefoxmc-server.vercel.app/search?q={searchTerms}"/>
+  <Image height="16" width="16" type="image/x-icon">https://firefoxmc-server.vercel.app/favicon.ico</Image>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+</OpenSearchDescription>
